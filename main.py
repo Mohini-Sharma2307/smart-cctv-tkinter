@@ -8,7 +8,7 @@ from PIL import Image, ImageTk
 
 window = tk.Tk()
 window.title("Smart cctv")
-window.iconphoto(False, tk.PhotoImage(file='mn.png'))
+window.iconphoto(False, tk.PhotoImage(file='smart-cctv-tkinter/mn.png'))
 window.geometry('1080x760')
 
 
@@ -20,34 +20,34 @@ label_title['font'] = label_font
 label_title.grid(pady=(10,10), column=2)
 
 
-icon = Image.open('icons/spy.png')
-icon = icon.resize((150,150), Image.ANTIALIAS)
+icon = Image.open('smart-cctv-tkinter/icons/spy.png')
+icon = icon.resize((150,150), Image.Resampling.LANCZOS)
 icon = ImageTk.PhotoImage(icon)
 label_icon = tk.Label(frame1, image=icon)
 label_icon.grid(row=1, pady=(5,10), column=2)
 
-btn1_image = Image.open('icons/lamp.png')
-btn1_image = btn1_image.resize((50,50), Image.ANTIALIAS)
+btn1_image = Image.open('smart-cctv-tkinter/icons/lamp.png')
+btn1_image = btn1_image.resize((50,50), Image.Resampling.LANCZOS)
 btn1_image = ImageTk.PhotoImage(btn1_image)
 
-btn2_image = Image.open('icons/rectangle-of-cutted-line-geometrical-shape.png')
-btn2_image = btn2_image.resize((50,50), Image.ANTIALIAS)
+btn2_image = Image.open('smart-cctv-tkinter/icons/rectangle-of-cutted-line-geometrical-shape.png')
+btn2_image = btn2_image.resize((50,50), Image.Resampling.LANCZOS)
 btn2_image = ImageTk.PhotoImage(btn2_image)
 
-btn5_image = Image.open('icons/exit.png')
-btn5_image = btn5_image.resize((50,50), Image.ANTIALIAS)
+btn5_image = Image.open('smart-cctv-tkinter/icons/exit.png')
+btn5_image = btn5_image.resize((50,50), Image.Resampling.LANCZOS)
 btn5_image = ImageTk.PhotoImage(btn5_image)
 
-btn3_image = Image.open('icons/security-camera.png')
-btn3_image = btn3_image.resize((50,50), Image.ANTIALIAS)
+btn3_image = Image.open('smart-cctv-tkinter/icons/security-camera.png')
+btn3_image = btn3_image.resize((50,50), Image.Resampling.LANCZOS)
 btn3_image = ImageTk.PhotoImage(btn3_image)
 
-btn6_image = Image.open('icons/incognito.png')
-btn6_image = btn6_image.resize((50,50), Image.ANTIALIAS)
+btn6_image = Image.open('smart-cctv-tkinter/icons/incognito.png')
+btn6_image = btn6_image.resize((50,50), Image.Resampling.LANCZOS)
 btn6_image = ImageTk.PhotoImage(btn6_image)
 
-btn4_image = Image.open('icons/recording.png')
-btn4_image = btn4_image.resize((50,50), Image.ANTIALIAS)
+btn4_image = Image.open('smart-cctv-tkinter/icons/recording.png')
+btn4_image = btn4_image.resize((50,50), Image.Resampling.LANCZOS)
 btn4_image = ImageTk.PhotoImage(btn4_image)
 
 # --------------- Button -------------------#
